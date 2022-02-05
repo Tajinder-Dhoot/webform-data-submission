@@ -1,0 +1,33 @@
+* {
+    border: 0px;
+}
+
+.container {
+    height: 100vh;
+    background-color: #0A043C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    height: 500px;
+    border-radius: 10px;
+
+    background-color: grey;
+}
+
+input {
+    margin: 10px;
+    padding: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #0A043C;
+}
+
+button {
+    padding: 10px 20px;
+}

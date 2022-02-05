@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <title>Tajinder Singh Dhoot</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="../style.css">
+    </head>
+    <body>
+        <div class="container">
+            <form action="">
+                <div class="name">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+                    <p>Firstname is: <span id="disfname"></span></p>
+                    <p>Lastname is: <span id="dislname"></span></p>
+                <div>
+                    <button type="button" onclick="submitForm()">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <script>
+            function submitForm() {
+                var firstName = document.getElementById("fname").value;
+                console.log(firstName);
+                var lastName = document.getElementById("lname").value;
+                console.log(lastName);
+                document.getElementById("disfname").innerHTML = firstName;
+                document.getElementById("dislname").innerHTML = lastName;
+            }
+        </script>
+    </body>
+</html>
